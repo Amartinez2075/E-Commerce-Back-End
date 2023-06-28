@@ -12,18 +12,21 @@ Tag.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
-  },
-  tag_name: {
+    },
+    tag_name: {
       type: DataTypes.STRING,
       allowNull: false
-  }
+    }
+  }, // Missing comma was added here
+
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'tag',
+    modelName: 'tag'
   }
-});
+);
 
 module.exports = Tag;
+

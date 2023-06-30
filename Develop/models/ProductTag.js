@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
+
 const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
@@ -24,7 +25,7 @@ ProductTag.init(
         model: 'tag',
         key: 'id'
       }
-    }, // <-- Add a comma here
+    }
   },
   {
     sequelize,
@@ -36,4 +37,3 @@ ProductTag.init(
 );
 
 module.exports = ProductTag;
-

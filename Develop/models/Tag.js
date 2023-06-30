@@ -6,7 +6,6 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    // define columns
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -15,18 +14,15 @@ Tag.init(
     },
     tag_name: {
       type: DataTypes.STRING,
-      allowNull: false
     }
-  }, // Missing comma was added here
-
+  },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'tag'
+    modelName: 'tag',
   }
 );
 
 module.exports = Tag;
-

@@ -132,6 +132,8 @@ router.put('/:id', (req, res) => {
     });
 });
 
+//localhost:3001/api/products/1
+
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
   Product.destroy({

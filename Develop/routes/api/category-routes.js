@@ -5,7 +5,7 @@ const { Category, Product } = require('../../models');
 
 router.get('/', (req, res) => {
   // find all categories
-  findall({
+  category.findall({
     include: [
       {
         model: Category,
@@ -114,3 +114,6 @@ router.delete('/:id', (req, res) => {
 });
 
 module.exports = router;
+
+
+//The insomnia route is localhost:3001/api/categories

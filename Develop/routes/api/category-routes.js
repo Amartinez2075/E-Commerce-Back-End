@@ -85,6 +85,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
+  //localhost:3001/api/categories/1
   Category.destroy({
     where: {
       id: req.params.id,

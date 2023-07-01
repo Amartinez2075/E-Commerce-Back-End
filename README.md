@@ -71,20 +71,20 @@ Enter PW when prompted
 
 ## Routes 
 
-1. Get Category Routes| `localhost:3001/api/categories`
-2. Get Category BY ID | `localhost:3001/api/categories/1`
-3. Put Update Category | `localhost:3001/api/categories/3`
-4. Del Delete Category | `localhost:3001/api/categories/3`
-5. Post Create Category|`localhost:3001/api/categories/`
+1. Get Category Routes| `localhost:3001/api/categories` -works
+2. Get Category BY ID | `localhost:3001/api/categories/1` -works 
+3. Put Update Category | `localhost:3001/api/categories/3` -works
+4. Del Delete Category | `localhost:3001/api/categories/3` -works
+5. Post Create Category|`localhost:3001/api/categories/` -works
 
-1. Get Product Routes| `localhost:3001/api/products`
-2. Get Product BY ID | `localhost:3001/api/products/3`
-3. Put Update Product | `localhost:3001/api/products/1`
-4. Del Delete Product | `localhost:3001/api/products/5`
-5. Post Create Product |`localhost:3001/api/products/`
+1. Get Product Routes| `localhost:3001/api/products` -works
+2. Get Product BY ID | `localhost:3001/api/products/3`-works
+3. Put Update Product | `localhost:3001/api/products/1` -Kinda Works
+4. Del Delete Product | `localhost:3001/api/products/5` -works 
+5. Post Create Product |`localhost:3001/api/products/` -Sequelize validation error
 
-1. Get Tag Routes| `localhost:3001/api/tags`
-2. Get Tag BY ID | `localhost:3001/api/tags/2`
-3. Put Update Tag | `localhost:3001/api/tags/1`
-4. Del Delete Tag | `localhost:3001/api/tags/4`
-5. Post Create Tag | `localhost:3001/api/tags/`
+1. Get Tag Routes| `localhost:3001/api/tags`-works
+2. Get Tag BY ID | `localhost:3001/api/tags/2`-works
+3. Put Update Tag | `localhost:3001/api/tags/1`-works
+4. Del Delete Tag | `localhost:3001/api/tags/4` -works
+5. Post Create Tag | `localhost:3001/api/tags/` -works

@@ -26,7 +26,6 @@ router.get('/', (req, res) => {
       res.status(500).json(err);
     });
 });
-
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
@@ -66,15 +65,21 @@ router.post('/', (req, res) => {
     .then((product) => {
       // if there are product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds && req.body.tagIds.length) {
-        const productTagIdArr = req.body.tagIds.map((tag_id) => {
-          return {
-            product_id: product.id,
-            tag_id: tag_id
-          }
-        });
+        const productTagIdArr = req.body.tagIds.map((tag_id) => ({
+          product_id: product.id,
+          tag_id: tag_id,
+          price: product.price,
+          stock: product.stock
+        }));
+
         return ProductTag.bulkCreate(productTagIdArr);
       } else {
-        return [];
+        return {
+          product_id: product.id,
+          tag_id: tag_id,
+          price: product.price,
+          stock: product.stock
+        };
       }
     })
     .then((productTagIds) => {
@@ -86,6 +91,7 @@ router.post('/', (req, res) => {
       res.status(400).json(err);
     });
 });
+
 
 // update product
 router.put('/:id', (req, res) => {

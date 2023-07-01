@@ -81,7 +81,7 @@ Enter PW when prompted
 2. Get Product BY ID | `localhost:3001/api/products/3`-works
 3. Put Update Product | `localhost:3001/api/products/1` -Kinda Works
 4. Del Delete Product | `localhost:3001/api/products/5` -works 
-5. Post Create Product |`localhost:3001/api/products/` -Sequelize validation error
+5. Post Create Product |`localhost:3001/api/products/` -json error
 
 1. Get Tag Routes| `localhost:3001/api/tags`-works
 2. Get Tag BY ID | `localhost:3001/api/tags/2`-works

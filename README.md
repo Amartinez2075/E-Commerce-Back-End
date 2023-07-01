@@ -24,6 +24,10 @@ THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 
+## Screen Shot
+
+![ScreenShot](<Develop/screenshots/Screenshot 2023-07-01 125417.png>)
+
 ## Technologies 
 
 1. MySQL12
@@ -37,6 +41,7 @@ THEN I am able to successfully create, update, and delete data in my database
 -[Description](#description)
 -[User Story](#User-Story)
 -[Acceptance Criteria](#Acceptance-Criteria) 
+-[Screenshot](#ScreenShot)
 -[Technologies](#technologies) 
 -[Table of Contents](#table-of-contents) 
 -[Installation](#installation)

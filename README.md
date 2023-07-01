@@ -27,7 +27,7 @@ THEN I am able to successfully create, update, and delete data in my database
 ## Screen Shot
 
 ![ScreenShot](<Develop/screenshots/Screenshot 2023-07-01 125417.png>)
-
+![Alt text](<screenshots/Screenshot 2023-07-01 125417.png>)
 ## Technologies 
 
 1. MySQL12

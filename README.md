@@ -34,13 +34,14 @@ THEN I am able to successfully create, update, and delete data in my database
 
 ## Table of Contents
 
-1. Description 
-2. User Criteria 
-3. Acceptance Criteria 
-4. Technologies 
-5. Table of Contents 
-6. Installation
-7. Usage
+-[Description](#description)
+-[User Story](#User-Story)
+-[Acceptance Criteria](#Acceptance-Criteria) 
+-[Technologies](#technologies) 
+-[Table of Contents](#table-of-contents) 
+-[Installation](#installation)
+-[Usage](#usage)
+-[Routes](#routes)
 
 ## Installation  
   
@@ -68,3 +69,22 @@ Enter PW when prompted
   
 `npm start`
 
+## Routes 
+
+1. Get Category Routes| `localhost:3001/api/categories`
+2. Get Category BY ID | `localhost:3001/api/categories/1`
+3. Put Update Category | `localhost:3001/api/categories/3`
+4. Del Delete Category | `localhost:3001/api/categories/3`
+5. Post Create Category|`localhost:3001/api/categories/`
+
+1. Get Product Routes| `localhost:3001/api/products`
+2. Get Product BY ID | `localhost:3001/api/products/3`
+3. Put Update Product | `localhost:3001/api/products/1`
+4. Del Delete Product | `localhost:3001/api/products/5`
+5. Post Create Product |`localhost:3001/api/products/`
+
+1. Get Tag Routes| `localhost:3001/api/tags`
+2. Get Tag BY ID | `localhost:3001/api/tags/2`
+3. Put Update Tag | `localhost:3001/api/tags/1`
+4. Del Delete Tag | `localhost:3001/api/tags/4`
+5. Post Create Tag | `localhost:3001/api/tags/`
